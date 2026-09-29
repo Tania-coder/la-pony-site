@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Story — La Pony Bakery</title>
+  <meta name="description" content="How Valeria went from finance in Argentina to baking medialunas in Aarhus.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="awning"></div>
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav__list" id="navList">
+          <li><a href="index.html">Shop</a></li>
+          <li><a href="story.html" class="is-active">My Story</a></li>
+          <li><a href="index.html#menu">Pop-ups</a></li>
+        </ul>
+
+        <a href="index.html" class="logo">
+          <span class="logo__name">La Pony</span>
+          <span class="logo__sub">bakery</span>
+        </a>
+
+        <div class="nav__right">
+          <a href="contact.html">Contact</a>
+          <a href="index.html#menu" class="cart">Cart · <span id="cartCount">0</span></a>
+          <button class="nav__burger" id="burger" aria-label="Menu">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container story">
+    <h1>My Story</h1>
+    <p class="story__lead">Some people pack photos when they move abroad…</p>
+
+    <div class="story__grid">
+      <div class="portrait">
+        <img src="img/valeria.jpg" alt="Valeria, the baker behind La Pony">
+        <div class="sticker">Hola!<br>I'm<br>Valeria</div>
+      </div>
+
+      <div>
+        <p class="big">In 2022 I swapped spreadsheets in Argentina for a tiny kitchen in Aarhus.</p>
+        <p>New country, new language, no job. So I did what Argentinians do when they miss home: I baked. First medialunas, golden and buttery. Then facturas, dulce de leche, all of it.</p>
+        <p>My friends ate everything (fast) and told me to start selling. Aarhus's Argentinian community showed up, and La Pony was born.</p>
+      </div>
+    </div>
+
+    <section class="why reveal">
+      <h3>Why "La Pony"?</h3>
+      <p>Back home my friends said I'm like a pony: stubborn, full of energy and impossible to stop. They were right.</p>
+    </section>
+
+    <!-- Behind-the-scenes block: links to the bakery's Instagram reels -->
+    <section class="video reveal">
+      <div class="video__thumb">
+        <a class="video__play" href="https://www.instagram.com/laponybakery/" target="_blank" rel="noopener" aria-label="Watch on Instagram">▶</a>
+      </div>
+      <div class="video__text">
+        <p class="eyebrow" style="color: var(--pink)">behind the scenes</p>
+        <h3>From oven to your door</h3>
+        <a class="btn btn--light" href="https://www.instagram.com/laponybakery/" target="_blank" rel="noopener">Watch on Instagram →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="logo">
+          <span class="logo__name">La Pony</span>
+          <span class="logo__sub">bakery</span>
+        </div>
+        <p>A little piece of Argentina,<br>handmade in Aarhus.</p>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <p>Ingerslevs Boulevard<br>Saturdays 08–14</p>
+      </div>
+      <div>
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Shop</a></li>
+          <li><a href="story.html">My Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Follow</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/laponybakery/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
