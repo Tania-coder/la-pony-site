@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Pony Bakery — Argentine croissants in Aarhus</title>
+  <meta name="description" content="Handmade Argentine medialunas and facturas, baked in small batches in Aarhus. Pre-order and pick up fresh on Saturday.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== Header: striped awning + navigation ===== -->
+  <header>
+    <div class="awning"></div>
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav__list" id="navList">
+          <li><a href="index.html" class="is-active">Shop</a></li>
+          <li><a href="story.html">My Story</a></li>
+          <li><a href="#menu">Pop-ups</a></li>
+        </ul>
+
+        <a href="index.html" class="logo">
+          <span class="logo__name">La Pony</span>
+          <span class="logo__sub">bakery</span>
+        </a>
+
+        <div class="nav__right">
+          <a href="contact.html">Contact</a>
+          <a href="#menu" class="cart">Cart · <span id="cartCount">0</span></a>
+          <button class="nav__burger" id="burger" aria-label="Menu">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="container hero">
+      <div class="hero__text">
+        <h1>Perfect <span class="script">Argentine</span> croissants</h1>
+        <p>Buttery medialunas and facturas, handmade in small batches in Aarhus. Pre-order and pick up fresh on Saturday.</p>
+        <div class="hero__buttons">
+          <a href="#menu" class="btn">Order now →</a>
+          <a href="#menu" class="btn btn--outline">See the menu</a>
+        </div>
+      </div>
+
+      <div class="hero__media">
+        <img src="img/medialunas.jpg" alt="Two freshly baked Argentine medialunas">
+        <span class="hero__flower">✿</span>
+        <div class="sticker hero__sticker">Fresh<br>every<br>Saturday</div>
+      </div>
+    </section>
+
+    <!-- ===== Marquee (text duplicated so the loop is seamless) ===== -->
+    <div class="marquee">
+      <div class="marquee__track">
+        <span>Medialunas ✿ Facturas ✿ Alfajores ✿ Handmade in Aarhus ✿ Real butter ✿</span>
+        <span>Medialunas ✿ Facturas ✿ Alfajores ✿ Handmade in Aarhus ✿ Real butter ✿</span>
+      </div>
+    </div>
+
+    <!-- ===== Menu ===== -->
+    <section class="container section" id="menu">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow">our menu</p>
+          <h2>Order for Saturday</h2>
+        </div>
+        <a href="contact.html" class="btn btn--outline">Full price list →</a>
+      </div>
+
+      <!-- Card 1 -->
+      <article class="menu-card reveal" data-product="Medialunas">
+        <div class="menu-card__media">
+          <img src="img/medialunas.jpg" alt="Butter medialunas on a marble table">
+          <div class="sticker menu-card__sticker">Real<br>butter</div>
+        </div>
+
+        <div class="menu-card__body">
+          <div class="menu-card__top">
+            <h3>Medialunas</h3>
+            <a class="video-link" href="https://www.instagram.com/laponybakery/" target="_blank" rel="noopener">
+              <span>▶</span> How they're made
+            </a>
+          </div>
+          <p class="menu-card__sub">Argentina's sweet butter croissants · prices in DKK</p>
+
+          <div class="option">
+            <div>
+              <h4>Classic <span class="script">the star</span></h4>
+              <p>Flaky layers of butter, light and airy, glazed with sweet syrup.</p>
+            </div>
+            <div class="prices">
+              <button class="price is-selected" data-price="260"><small>Dozen</small><b>260</b></button>
+              <button class="price" data-price="150"><small>Half dozen</small><b>150</b></button>
+            </div>
+          </div>
+
+          <div class="option">
+            <div>
+              <h4>Stuffed</h4>
+              <p>Filled with pastry cream and dulce de leche.</p>
+            </div>
+            <div class="prices">
+              <button class="price" data-price="300"><small>Dozen</small><b>300</b></button>
+              <button class="price" data-price="180"><small>Half dozen</small><b>180</b></button>
+            </div>
+          </div>
+
+          <div class="option">
+            <div>
+              <h4>Combined <span class="script">try both</span></h4>
+              <p>6 classic + 3 pastry cream + 3 dulce de leche.</p>
+            </div>
+            <div class="prices">
+              <button class="price" data-price="300"><small>Dozen</small><b>300</b></button>
+              <button class="price" data-price="180"><small>Half dozen</small><b>180</b></button>
+            </div>
+          </div>
+
+          <div class="menu-card__footer">
+            <div class="qty">
+              <button type="button" data-step="-1" aria-label="Minus">−</button>
+              <span class="qty__value">1</span>
+              <button type="button" data-step="1" aria-label="Plus">+</button>
+            </div>
+            <button class="btn js-add">Add to order · <span class="js-total">260</span> kr →</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2: mirrored, photo on the right -->
+      <article class="menu-card menu-card--reverse reveal" data-product="Facturas">
+        <div class="menu-card__media">
+          <!-- TODO: replace this placeholder with a real facturas photo -->
+          <div class="menu-card__placeholder">Facturas photo</div>
+          <div class="sticker menu-card__sticker">Takes<br>3 days</div>
+        </div>
+
+        <div class="menu-card__body">
+          <div class="menu-card__top">
+            <h3>Facturas</h3>
+            <a class="video-link" href="https://www.instagram.com/laponybakery/" target="_blank" rel="noopener">
+              <span>▶</span> How they're made
+            </a>
+          </div>
+          <p class="menu-card__sub">Filled Argentinian pastries · prices in DKK</p>
+
+          <div class="option">
+            <div>
+              <h4>Pastry cream</h4>
+              <p>Laminated dough with smooth vanilla cream.</p>
+            </div>
+            <div class="prices">
+              <button class="price is-selected" data-price="260"><small>Dozen</small><b>260</b></button>
+              <button class="price" data-price="150"><small>Half dozen</small><b>150</b></button>
+            </div>
+          </div>
+
+          <div class="option">
+            <div>
+              <h4>Quince <span class="script">classic</span></h4>
+              <p>Sweet membrillo jam, the Argentinian favourite.</p>
+            </div>
+            <div class="prices">
+              <button class="price" data-price="260"><small>Dozen</small><b>260</b></button>
+              <button class="price" data-price="150"><small>Half dozen</small><b>150</b></button>
+            </div>
+          </div>
+
+          <div class="option">
+            <div>
+              <h4>Dulce de leche</h4>
+              <p>Rich caramel filling, a true classic.</p>
+            </div>
+            <div class="prices">
+              <button class="price" data-price="300"><small>Dozen</small><b>300</b></button>
+              <button class="price" data-price="180"><small>Half dozen</small><b>180</b></button>
+            </div>
+          </div>
+
+          <div class="menu-card__footer">
+            <div class="qty">
+              <button type="button" data-step="-1" aria-label="Minus">−</button>
+              <span class="qty__value">1</span>
+              <button type="button" data-step="1" aria-label="Plus">+</button>
+            </div>
+            <button class="btn js-add">Add to order · <span class="js-total">260</span> kr →</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="logo">
+          <span class="logo__name">La Pony</span>
+          <span class="logo__sub">bakery</span>
+        </div>
+        <p>A little piece of Argentina,<br>handmade in Aarhus.</p>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <p>Ingerslevs Boulevard<br>Saturdays 08–14</p>
+      </div>
+      <div>
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Shop</a></li>
+          <li><a href="story.html">My Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Follow</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/laponybakery/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
