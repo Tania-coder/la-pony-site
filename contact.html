@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — La Pony Bakery</title>
+  <meta name="description" content="Order medialunas and facturas in Aarhus. Find La Pony at Ingerslevs Boulevard every Saturday.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="awning"></div>
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav__list" id="navList">
+          <li><a href="index.html">Shop</a></li>
+          <li><a href="story.html">My Story</a></li>
+          <li><a href="index.html#menu">Pop-ups</a></li>
+        </ul>
+
+        <a href="index.html" class="logo">
+          <span class="logo__name">La Pony</span>
+          <span class="logo__sub">bakery</span>
+        </a>
+
+        <div class="nav__right">
+          <a href="contact.html" class="is-active">Contact</a>
+          <a href="index.html#menu" class="cart">Cart · <span id="cartCount">0</span></a>
+          <button class="nav__burger" id="burger" aria-label="Menu">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <p class="eyebrow" style="margin-top: 30px">say hola</p>
+    <h1 style="font-size: 84px; font-weight: 800; text-transform: uppercase; color: var(--blue)">Get in touch</h1>
+
+    <div class="contact">
+      <!-- novalidate: we validate in JS so we can show our own messages -->
+      <form id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <span class="error"></span>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@email.com" required>
+          <span class="error"></span>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="+45">
+          <span class="error"></span>
+        </div>
+
+        <div class="field">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
+            <option>Custom cake order</option>
+            <option>Saturday pre-order</option>
+            <option>Catering / events</option>
+            <option>Something else</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us what you'd like…" required></textarea>
+          <span class="error"></span>
+        </div>
+
+        <button type="submit" class="btn">Send message →</button>
+        <p class="form__status" id="formStatus" role="status"></p>
+      </form>
+
+      <aside class="info">
+        <h3>Find us on Saturday</h3>
+
+        <div class="info__row">
+          <div class="info__icon">⌖</div>
+          <div><b>Pop-up market</b><br>Ingerslevs Boulevard, 8000 Aarhus</div>
+        </div>
+
+        <div class="info__row">
+          <div class="info__icon">◷</div>
+          <div><b>Saturdays</b><br>08:00 – 14:00</div>
+        </div>
+
+        <div class="info__row">
+          <div class="info__icon">✉</div>
+          <div><b>Pre-orders</b><br>Send a DM on Instagram</div>
+        </div>
+
+        <!-- TODO: put a Google Maps iframe here -->
+        <div class="info__map">Map</div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="logo">
+          <span class="logo__name">La Pony</span>
+          <span class="logo__sub">bakery</span>
+        </div>
+        <p>A little piece of Argentina,<br>handmade in Aarhus.</p>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <p>Ingerslevs Boulevard<br>Saturdays 08–14</p>
+      </div>
+      <div>
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Shop</a></li>
+          <li><a href="story.html">My Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Follow</h5>
+        <ul>
+          <li><a href="https://www.instagram.com/laponybakery/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
